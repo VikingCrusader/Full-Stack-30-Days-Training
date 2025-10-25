@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 10px;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px dashed #ccc;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .chagestyle {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px dashed #ccc;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .bold-text {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      #nummern {
+        width: 200px;
+        height: 100px;
+        position: relative;
+      }
+      #nummern li {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        text-shadow: 0 0 5px #000;
+        font-size: 35px;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      #nummern li.active {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        text-shadow: 0 0 5px #000;
+        font-size: 35px;
+        color: #fff;
+        opacity: 1;
+        transition: opacity 1s;
+      }
+
+      button {
+        color: red;
+      }
+
+      #btnbox {
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="block" class="defalt">默认内容</div>
+    <ul id="nummern">
+      <li>eins</li>
+      <li>zwei</li>
+      <li>drei</li>
+      <li>vier</li>
+    </ul>
+    <div id="btnbox">
+      <button id="prev">previous</button>
+      <button id="next">next</button>
+    </div>
+    <script src="style_process.js"></script>
+  </body>
+</html>
