@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //延时定时器
+      setTimeout(function () {
+        console.log("surprise");
+      }, 2000); //延时2000ms（2s）
+
+      //间隔计时器
+      var timer = setInterval(function () {
+        alert("间隔2秒输出一次");
+      }, 2000);
+
+      setTimeout(function () {
+        clearInterval(timer);
+      }, 10000);
+    </script>
+  </body>
+</html>
